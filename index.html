@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tell Congressman Bera: Support PHIERS - The Solution That Works</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+        .header {
+            background: linear-gradient(135deg, #1e40af 0%, #dc2626 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+        .header h1 {
+            font-size: 2.2em;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+        .urgency-banner {
+            background: #fef3c7;
+            border-left: 5px solid #f59e0b;
+            padding: 20px;
+            margin: 0;
+            text-align: center;
+            font-weight: 600;
+            color: #b45309;
+            font-size: 1.05em;
+        }
+        .content {
+            padding: 40px;
+        }
+        .section {
+            margin-bottom: 35px;
+        }
+        .section h2 {
+            color: #1e40af;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            border-bottom: 3px solid #dc2626;
+            padding-bottom: 10px;
+        }
+        .section p {
+            margin-bottom: 15px;
+            font-size: 1.05em;
+            color: #555;
+        }
+        .math-highlight {
+            background: #f0fdf4;
+            border-left: 5px solid #16a34a;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-weight: 600;
+        }
+        .math-highlight .number {
+            font-size: 1.8em;
+            color: #16a34a;
+            font-weight: 700;
+        }
+        .video-container {
+            background: #f3f4f6;
+            padding: 25px;
+            border-radius: 8px;
+            text-align: center;
+            margin: 25px 0;
+        }
+        .video-container h3 {
+            color: #1e40af;
+            margin-bottom: 15px;
+        }
+        .video-link {
+            display: inline-block;
+            background: #dc2626;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.05em;
+            transition: background 0.3s;
+            margin: 10px 5px;
+        }
+        .video-link:hover {
+            background: #b91c1c;
+        }
+        .action-section {
+            background: linear-gradient(135deg, #f0fdf4 0%, #dbeafe 100%);
+            padding: 35px;
+            border-radius: 10px;
+            margin: 30px 0;
+        }
+        .action-section h2 {
+            border-color: #16a34a;
+            color: #16a34a;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        .form-group label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: #1e40af;
+        }
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #dbeafe;
+            border-radius: 6px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: border-color 0.3s;
+        }
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #1e40af;
+            box-shadow: 0 0 0 3px rgba(30, 64, 175, 0.1);
+        }
+        .form-group textarea {
+            resize: vertical;
+            min-height: 120px;
+        }
+        .submit-btn {
+            background: linear-gradient(135deg, #16a34a 0%, #059669 100%);
+            color: white;
+            padding: 15px 40px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: 700;
+            cursor: pointer;
+            transition: transform 0.2s, box-shadow 0.2s;
+            width: 100%;
+        }
+        .submit-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(22, 163, 74, 0.3);
+        }
+        .submit-btn:active {
+            transform: translateY(0);
+        }
+        .option-box {
+            background: white;
+            border-left: 5px solid #1e40af;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 6px;
+        }
+        .option-box h4 {
+            color: #1e40af;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+        .option-box.good {
+            border-left-color: #16a34a;
+        }
+        .option-box.good h4 {
+            color: #16a34a;
+        }
+        .option-box.warning {
+            border-left-color: #f59e0b;
+        }
+        .option-box.warning h4 {
+            color: #f59e0b;
+        }
+        .option-box.bad {
+            border-left-color: #dc2626;
+        }
+        .option-box.bad h4 {
+            color: #dc2626;
+        }
+        .contact-info {
+            background: #f3f4f6;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1em;
+        }
+        .contact-info p {
+            margin-bottom: 8px;
+        }
+        .contact-info strong {
+            color: #1e40af;
+        }
+        .footer {
+            background: #1f2937;
+            color: white;
+            padding: 30px;
+            text-align: center;
+            font-size: 0.95em;
+        }
+        .footer p {
+            margin-bottom: 10px;
+        }
+        @media (max-width: 768px) {
+            .header h1 { font-size: 1.7em; }
+            .content { padding: 25px; }
+            .section h2 { font-size: 1.3em; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🎯 Tell Congressman Ami Bera</h1>
+            <p>Support PHIERS - The Solution That Works (136x Better Than MFN)</p>
+        </div>
+        
+        <div class="urgency-banner">
+            ⏰ 8 DAYS UNTIL HEALTHCARE CRISIS | Congress Is Home | This Moment Doesn't Come Back
+        </div>
+
+        <div class="content">
+            <!-- THE OPPORTUNITY -->
+            <div class="section">
+                <h2>🚀 The Opportunity</h2>
+                <p>Congressman Bera, you said you hope President Trump's healthcare cost reduction efforts succeed. We've found the solution that makes it happen—136x better than his current plan.</p>
+                
+                <div class="math-highlight">
+                    <p>TRUMP'S PLAN (MFN): $10-20B savings annually</p>
+                    <p style="margin-top: 10px;"><span class="number">PHIERS SOLUTION: $2.73 TRILLION savings annually</span></p>
+                    <p style="margin-top: 10px; font-size: 0.95em;">That's <strong>136x more effective</strong> at achieving Trump's stated goal.</p>
+                </div>
+                
+                <p>You can position Sacramento as the district that showed the President what actually works—and be celebrated as the representative who helped Trump succeed.</p>
+            </div>
+
+            <!-- WHY THIS MATTERS TO AMI -->
+            <div class="section">
+                <h2>💡 Why This Matters to You</h2>
+                <p><strong>Cost Reduction:</strong> You want lower healthcare costs. PHIERS delivers $7,400/person savings through efficiency (not negotiation).</p>
+                <p><strong>Veterans:</strong> You care deeply about veteran benefits. PHIERS protects 100M+ Americans from benefits theft and provides universal healthcare.</p>
+                <p><strong>Al Wilson:</strong> You know Al. This solution prevents what happened to him and countless others.</p>
+                <p><strong>Sacramento Leadership:</strong> Position California's capital district as the solution that works—not just for Democrats, but for Trump's goals too.</p>
+            </div>
+
+            <!-- THE VIDEO -->
+            <div class="video-container">
+                <h3>Watch Will Price's Response to Your Challenge</h3>
+                <p style="margin-bottom: 15px;">Congressman Bera asked the question. Will Price has the answer.</p>
+                <a href="https://youtu.be/eE-TxvI0d4Q" target="_blank" class="video-link">▶️ Watch Personal Story (2:22)</a>
+                <a href="https://youtu.be/jMU6LKEBzbs" target="_blank" class="video-link">▶️ Watch Mechanism (3:33)</a>
+                <p style="margin-top: 15px; font-size: 0.9em; color: #666;">After watching, use the form below to tell Congress to act.</p>
+            </div>
+
+            <!-- CONGRESSIONAL CHOICE -->
+            <div class="section">
+                <h2>🎯 Congressman Bera's Choice</h2>
+                
+                <div class="option-box good">
+                    <h4>✅ OPTION A: LEAD THIS</h4>
+                    <p>Publicly recognize PHIERS as superior to MFN. Support the solution. Be celebrated as the representative who helped Trump succeed 136x better than his current plan. Position Sacramento as the solution capital.</p>
+                </div>
+
+                <div class="option-box warning">
+                    <h4>⚠️ OPTION B: WAIT AND SEE</h4>
+                    <p>An article publishes before Dec 31 to 55M readers. PHIERS goes viral. Other representatives claim credit for recognizing it early. Sacramento loses the first-mover advantage.</p>
+                </div>
+
+                <div class="option-box bad">
+                    <h4>❌ OPTION C: STAY SILENT</h4>
+                    <p>Explain to constituents why you preferred Trump's plan that saves 1% of what's possible. Face primary challenges from representatives who did support it. Lose the moment.</p>
+                </div>
+            </div>
+
+            <!-- ACTION FORM -->
+            <div class="action-section">
+                <h2>✉️ Send Your Message to Congressman Bera</h2>
+                <p style="margin-bottom: 20px;">Fill out the form below. We'll send your message PLUS Will Price's letter and video to Congressman Bera's office, showing constituent support for PHIERS.</p>
+                
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Your Name *</label>
+                        <input type="text" id="name" name="name" required placeholder="Full Name">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Your Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="city">City (Sacramento County) *</label>
+                        <input type="text" id="city" name="city" required placeholder="Your city">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Your Message (Optional)</label>
+                        <textarea id="message" name="message" placeholder="Add your personal message about why PHIERS matters to you..."></textarea>
+                    </div>
+
+                    <button type="submit" class="submit-btn">📧 Send to Congressman Bera Now</button>
+                </form>
+
+                <div class="contact-info" style="margin-top: 25px;">
+                    <p style="font-weight: 600; margin-bottom: 15px;">📞 Direct Contact (If you prefer to reach out yourself):</p>
+                    <p><strong>Sacramento Office:</strong> (916) 635-0505</p>
+                    <p><strong>Email:</strong> Ami.Bera@mail.house.gov</p>
+                    <p><strong>Washington DC:</strong> (202) 225-5716</p>
+                    <p style="margin-top: 15px; font-size: 0.95em; color: #666;">📍 8950 Cal Center Drive, Building 3, Suite 100, Sacramento, CA 95826</p>
+                </div>
+            </div>
+
+            <!-- WHY THIS WORKS -->
+            <div class="section">
+                <h2>🎯 Why This Works</h2>
+                <p><strong>Bipartisan Math:</strong> Trump wants cost reduction (PHIERS delivers 136x better). Democrats want universal coverage (PHIERS delivers it). Republicans want fiscal responsibility (PHIERS saves $2.73T). Math is non-partisan.</p>
+                <p><strong>Article Timing:</strong> Before Dec 31, 55M readers will learn about PHIERS. Congressman Bera can position Sacramento as the district that recognized this first.</p>
+                <p><strong>Constituent Power:</strong> 1,500 signatures force town halls. 10,000+ means Congress can't ignore. Congressman Bera has the voice to lead this—and the political cover to claim credit.</p>
+            </div>
+
+            <!-- THE ASK -->
+            <div class="section">
+                <h2>💰 The Ask</h2>
+                <p>We need $15,000 to guarantee article publication before Dec 31 (Pathos Communications package). That article reaches 55M readers. Those readers sign petitions. Petitions force Congressional action.</p>
+                <p><strong>For Congressman Bera:</strong> Supporting the article publication = supporting the moment that positions Sacramento as the solution capital and Trump as the President who achieved what he promised.</p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p><strong>PHIERS Movement</strong> - Making America Better And Healthier</p>
+            <p>Universal Healthcare for $600/year • 250,000+ AI-Proof Jobs • Monthly Assistance Checks</p>
+            <p style="margin-top: 15px; font-size: 0.9em;">Will Price, Chief Solutions Architect • (301) 919-0970 • wdprice@phiers.org</p>
+            <p style="margin-top: 10px; font-size: 0.85em; opacity: 0.8;">phiers.org • #MABAH #PHIERS</p>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const city = document.getElementById('city').value;
+            const message = document.getElementById('message').value;
+            
+            // Construct the email body with all information
+            const emailBody = `
+MESSAGE FROM CONSTITUENT:
+
+Name: ${name}
+Email: ${email}
+City: ${city}
+
+Personal Message:
+${message || "(No additional message provided)"}
+
+---
+
+ATTACHED: Will Price's Letter on PHIERS Solution & Video Links
+
+Videos:
+- Personal Story: https://youtu.be/eE-TxvI0d4Q
+- Mechanism: https://youtu.be/jMU6LKEBzbs
+
+[Will Price's full letter would be attached here]
+
+This constituent supports PHIERS as the superior solution to healthcare cost reduction and asks for your support.
+            `;
+            
+            // Direct email link to Congressman's office
+            const mailtoLink = `mailto:Ami.Bera@mail.house.gov?subject=Support%20for%20PHIERS%20Solution%20-%20Healthcare%20Cost%20Reduction&body=${encodeURIComponent(emailBody)}`;
+            
+            window.location.href = mailtoLink;
+            
+            // Show confirmation
+            alert('Thank you! Your email is being prepared. It will open in your default email client so you can review and send it. The Congressman will receive your message along with Will Price\'s proposal and video links.');
+        });
+    </script>
+</body>
+</html>
